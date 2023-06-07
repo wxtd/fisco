@@ -139,6 +139,8 @@ Return values:
 
 ```
 
+ 具体可参考： https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/console/console_of_java_sdk.html
+
 
 
 ## 测试
