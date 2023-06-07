@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# test chainmake node consensus algorithm
+# test fisco node consensus algorithm
 
 # Example: 
 
