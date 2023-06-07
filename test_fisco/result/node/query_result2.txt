@@ -1,0 +1,27 @@
+Jun 07, 2023 8:37:33 AM org.jline.utils.Log logr
+WARNING: Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+=============================================================================================
+Welcome to FISCO BCOS console(2.9.2)!
+Type 'help' or 'h' for help. Type 'quit' or 'q' to quit console.
+ ________ ______  ______   ______   ______       _______   ______   ______   ______  
+|        |      \/      \ /      \ /      \     |       \ /      \ /      \ /      \ 
+| $$$$$$$$\$$$$$|  $$$$$$|  $$$$$$|  $$$$$$\    | $$$$$$$|  $$$$$$|  $$$$$$|  $$$$$$\
+| $$__     | $$ | $$___\$| $$   \$| $$  | $$    | $$__/ $| $$   \$| $$  | $| $$___\$$
+| $$  \    | $$  \$$    \| $$     | $$  | $$    | $$    $| $$     | $$  | $$\$$    \ 
+| $$$$$    | $$  _\$$$$$$| $$   __| $$  | $$    | $$$$$$$| $$   __| $$  | $$_\$$$$$$\
+| $$      _| $$_|  \__| $| $$__/  | $$__/ $$    | $$__/ $| $$__/  | $$__/ $|  \__| $$
+| $$     |   $$ \\$$    $$\$$    $$\$$    $$    | $$    $$\$$    $$\$$    $$\$$    $$
+ \$$      \$$$$$$ \$$$$$$  \$$$$$$  \$$$$$$      \$$$$$$$  \$$$$$$  \$$$$$$  \$$$$$$
+
+=============================================================================================
+>....---------------------------------------------------------------------------------------------
+Return code: 0
+description: transaction executed successfully
+Return message: Success
+---------------------------------------------------------------------------------------------
+Return value size:3
+Return types: ([STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING] [INT, INT, INT, INT, INT, INT, INT, INT] [STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING] )
+Return values:([fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit] [1, 1, 1, 1, 1, 1, 1, 1] [apple, apple, apple, apple, apple, apple, apple, apple] )
+---------------------------------------------------------------------------------------------
+
+>....
