@@ -1,3 +1,4 @@
 # /node
 /node/127.0.0.1/*/log
 /node/127.0.0.1/*/data
+/node/127.0.0.1/*/conf
