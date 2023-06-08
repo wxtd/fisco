@@ -150,6 +150,11 @@ Return values:
 ```shell
 cd ../..
 
+# 总流程（测试以下所有）
+./run.sh
+# ----------------------------------------
+
+# or 分项执行
 # 基础query & invoke
 # 关于query
 ./test_query_or_invoke.sh query 1 TableTest 0x841ca048dcaff1569346b60ad30e9f08ee0f32e0 select fruit
