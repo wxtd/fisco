@@ -6,7 +6,7 @@
 
 # Firstly query and then save this result as log1.txt
 saveQueryResult() {
-    infoln "Querying~"
+    println "Querying~"
     # println $#
     
     # processParam $@
