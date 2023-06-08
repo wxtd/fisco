@@ -1,4 +1,4 @@
-Jun 07, 2023 7:44:15 AM org.jline.utils.Log logr
+Jun 08, 2023 8:11:51 AM org.jline.utils.Log logr
 WARNING: Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
 =============================================================================================
 Welcome to FISCO BCOS console(2.9.2)!
@@ -63,16 +63,16 @@ Type 'help' or 'h' for help. Type 'quit' or 'q' to quit console.
     timestamp='0x1889428360b',
     signatureList=[
         {
+            index='0x1',
+            signature='0xe62705b49e6d03fdeab6e33473f71d013a07e339522837072776c4af6c9539ff134a34a92cdaf24d628eacab6a46c99be6410bd85c81e25bcb3b83d4116fcfd000'
+        },
+        {
             index='0x0',
             signature='0x1cead5127b97affe1b91d033252a740b906d237bf34eead81157feb65c6bfa0207a3efbf9dd7ca8bcd16f03bf0dc8bc8925b71a8392e02efa9590bb01d52fbb800'
         },
         {
-            index='0x3',
-            signature='0xfd15efd7e50b493c77a4a74a312e14ec34ea82dd55ce9e8b37b25cee4e453a697a5f358b5bdb7bb11218871738e48ff433cd2467dbe478d33ef75dceae101b0c01'
-        },
-        {
-            index='0x1',
-            signature='0xe62705b49e6d03fdeab6e33473f71d013a07e339522837072776c4af6c9539ff134a34a92cdaf24d628eacab6a46c99be6410bd85c81e25bcb3b83d4116fcfd000'
+            index='0x2',
+            signature='0xb5ee27f8c289a76fcbf9e1af933be1562651178225fd8131e336c0aecbd588dd737ce7755846f990da9fe495fbdfae08984b5f6e77e69dfa73ae8fdc4f35295e00'
         }
     ]
 }

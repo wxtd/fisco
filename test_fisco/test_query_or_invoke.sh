@@ -29,7 +29,7 @@ EOF
 # compare query result with the query result firstly
 CompareQueryResult() {
     # println "CompareQueryResult"
-    infoln "Querying~"
+    println "Querying~"
     # processParam $@
 
 ${CONSOLE} > $QUERY_OR_INVOKE_RESULT_ADDRESS/query_result2.txt 2>&1 << EOF
@@ -42,16 +42,16 @@ EOF
     local result2=`cat $QUERY_OR_INVOKE_RESULT_ADDRESS/query_result2.txt | sed -n "/Return values:/ p"`
     # echo $result2
     if [ "$result1" == "$result2" ]; then
-        println "Query result is the same!"
+        successln "Query result is the same!"
     else
-        println "Query result is different"
+        errorln "Query result is different"
     fi
 }
 
 # Invoke cmd result
 # Chaincode invoke successful. result: status:200
 ivokeChaincode() {
-    infoln "Invoking~"
+    println "Invoking~"
     # processParam $@
 
     # ADDRESS=$(dirname "$PWD")
@@ -69,9 +69,9 @@ EOF
     local t2=`cat $invoke_result | sed -n "/transaction status: 0x0/ p"`
     # echo $t1 $t2
     if [[ "$t1" || "$t2" ]];then
-        println "Invoke Success!"
+        successln "Invoke Success!"
     else
-        println "Invoke Failed"
+        errorln "Invoke Failed"
     fi
 }
 

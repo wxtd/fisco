@@ -1,0 +1,73 @@
+[0;34m2023-06-08 16:08:40[0m
+-------------------------------------------------
+[0;34m./test_docker_architecture.sh # Testing if using docker architecture[0m
+fiscoorg/fiscobcos:v2.9.1 fiscoorg/fiscobcos:v2.9.1 fiscoorg/fiscobcos:v2.9.1 fiscoorg/fiscobcos:v2.9.1
+[0;32mUsing Docker Architecture![0m
+[0;34m./test_query_or_invoke.sh query 1 TableTest 0x841ca048dcaff1569346b60ad30e9f08ee0f32e0 select student[0m
+[0;34mQuerying~[0m
+[0;34m./test_query_or_invoke.sh query 2 TableTest 0x841ca048dcaff1569346b60ad30e9f08ee0f32e0 select student # Testing query command[0m
+Querying~
+[0;32mQuery result is the same![0m
+[0;34m./test_query_or_invoke.sh invoke TableTest 0x841ca048dcaff1569346b60ad30e9f08ee0f32e0 insert student 1 cz # Testing invoke command[0m
+Invoking~
+[0;32mInvoke Success![0m
+[0;34m./detect_encryption_method.sh # Testing all encryption algorithms[0m
+ecdsa-with-SHA256
+sha256WithRSAEncryption
+sha256WithRSAEncryption
+ecdsa-with-SHA256
+ecdsa-with-SHA256
+sha256WithRSAEncryption
+sha256WithRSAEncryption
+ecdsa-with-SHA256
+ecdsa-with-SHA256
+sha256WithRSAEncryption
+sha256WithRSAEncryption
+ecdsa-with-SHA256
+ecdsa-with-SHA256
+sha256WithRSAEncryption
+sha256WithRSAEncryption
+ecdsa-with-SHA256
+[0;34m./test_blade.sh # Testing maintainability Creating faults with chaosblade, a chaos engineering tool[0m
+[0;34mQuerying~[0m
+Creating cpu blade~
+Querying~
+[0;32mQuery result is the same![0m
+Creating disk blade~
+Querying~
+[0;32mQuery result is the same![0m
+Creating mem blade~
+Querying~
+[0;32mQuery result is the same![0m
+[0;34m./test_data_crypt.sh # Detecting whether the block data content is desensitized and encrypted[0m
+input='0xebf3b24f0000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000005667275697400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000056170706c65000000000000000000000000000000000000000000000000000000',
+[0;34m./test_data_duration.sh # Testing transaction idempotency, persistence[0m
+[0;34mQuerying~[0m
+Querying~
+[0;32mQuery result is the same![0m
+Querying~
+[0;32mQuery result is the same![0m
+[0;34m./test_node_high_available.sh invoke 0 TableTest 0x841ca048dcaff1569346b60ad30e9f08ee0f32e0 insert student 1 cz # Testing node high availability[0m
+Stopping homeubuntumsfisconodes127.0.0.1node0
+Stop Success
+Invoking~
+[0;32mInvoke Success![0m
+Stopping homeubuntumsfisconodes127.0.0.1node0
+Stop Success
+[0;34m./test_node_data_consistency.sh # Detecting node data consistency, support failover or not[0m
+[0;32mCommon part:[0m
+Commit block: 28 to backend storage finished, current cached block: 28
+[0;34m./test_node_raft.sh # Validating Consensus Algorithms[0m
+[0;34mQuerying~[0m
+Stopping homeubuntumsfisconodes127.0.0.1node0
+Stop Success
+Querying~
+[0;32mQuery result is the same![0m
+Invoking~
+[0;32mInvoke Success![0m
+Starting homeubuntumsfisconodes127.0.0.1node0
+Start Success
+sleep 10~
+[0;32mCommon part:[0m
+Commit block: 30 to backend storage finished, current cached block: 30
+-------------------------------------------------

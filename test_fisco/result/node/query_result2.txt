@@ -1,4 +1,4 @@
-Jun 07, 2023 8:37:33 AM org.jline.utils.Log logr
+Jun 08, 2023 8:13:07 AM org.jline.utils.Log logr
 WARNING: Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
 =============================================================================================
 Welcome to FISCO BCOS console(2.9.2)!
@@ -20,8 +20,8 @@ description: transaction executed successfully
 Return message: Success
 ---------------------------------------------------------------------------------------------
 Return value size:3
-Return types: ([STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING] [INT, INT, INT, INT, INT, INT, INT, INT] [STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING] )
-Return values:([fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit] [1, 1, 1, 1, 1, 1, 1, 1] [apple, apple, apple, apple, apple, apple, apple, apple] )
+Return types: ([STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING] [INT, INT, INT, INT, INT, INT, INT, INT, INT, INT, INT, INT, INT, INT, INT, INT, INT] [STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING, STRING] )
+Return values:([fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit, fruit] [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] [apple, apple, apple, apple, apple, apple, apple, apple, apple, apple, apple, apple, apple, apple, apple, apple, apple] )
 ---------------------------------------------------------------------------------------------
 
 >....

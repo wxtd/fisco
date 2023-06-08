@@ -2,3 +2,4 @@
 **/log
 **/data
 **/conf
+/nodes/127.0.0.1/node*/log

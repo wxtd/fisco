@@ -10,6 +10,7 @@ QUERY_OR_INVOKE_RESULT_ADDRESS=$NODE_RESULT_ADDRESS
 TESTDATA_ADDRESS=./testdata
 Chaincode1_ADDRESS=0x841ca048dcaff1569346b60ad30e9f08ee0f32e0
 CONSOLE=./tools/console/start.sh
+LOG=$RESULT_ADDRESS/test.log
 # cmc=../tools/cmc/cmc
 # SDK_ADDRESS=${TESTDATA_ADDRESS}/sdk_config.yml
 # SDK1_ADDRESS=${TESTDATA_ADDRESS}/sdk_config1.yml
@@ -43,27 +44,29 @@ C_YELLOW='\033[1;33m'
 
 # println echos string
 function println() {
-  echo -e "$1"
+  # echo $@
+  echo -e $@
 }
 
 # errorln echos i red color
 function errorln() {
-  println "${C_RED}${1}${C_RESET}"
+  println "${C_RED}$@${C_RESET}"
 }
 
 # successln echos in green color
 function successln() {
-  println "${C_GREEN}${1}${C_RESET}"
+  println "${C_GREEN}$@${C_RESET}"
 }
 
 # infoln echos in blue color
 function infoln() {
-  println "${C_BLUE}${1}${C_RESET}"
+  # println $@
+  println "${C_BLUE}$@${C_RESET}"
 }
 
 # warnln echos in yellow color
 function warnln() {
-  println "${C_YELLOW}${1}${C_RESET}"
+  println "${C_YELLOW}$@${C_RESET}"
 }
 
 # fatalln echos in red color and exits with fail status
@@ -85,7 +88,7 @@ stop_docker() {
   do
     println "Stopping ${i}"
     local res=`docker stop $i`
-    echo $res
+    # echo $res
     wait
     println "Stop Success"
   done
@@ -96,9 +99,9 @@ start_docker() {
   do
     println "Starting ${i}"
     local res=`docker start $i`
-    echo $res
+    # echo $res
     wait
-    sleep 30
+    sleep 15
     # TODO
     println "Start Success"
   done
@@ -127,3 +130,7 @@ start_docker() {
 #     fi  
 #   done
 # }
+
+if [[ ! -f $LOG ]]; then
+  touch $LOG
+fi

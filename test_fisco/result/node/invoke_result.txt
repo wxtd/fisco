@@ -1,4 +1,4 @@
-Jun 07, 2023 8:37:37 AM org.jline.utils.Log logr
+Jun 08, 2023 8:13:11 AM org.jline.utils.Log logr
 WARNING: Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
 =============================================================================================
 Welcome to FISCO BCOS console(2.9.2)!
@@ -14,7 +14,7 @@ Type 'help' or 'h' for help. Type 'quit' or 'q' to quit console.
  \$$      \$$$$$$ \$$$$$$  \$$$$$$  \$$$$$$      \$$$$$$$  \$$$$$$  \$$$$$$  \$$$$$$
 
 =============================================================================================
->....transaction hash: 0x6a4e76ad114634a1a0d7e225fc8e0d47993cbc6e38d6feb587ec2892db2680bf
+>....transaction hash: 0x16b717960bd60a8faf56e9bab77075f9fc9613db2bf7f24d7b78b6a94f03c83d
 ---------------------------------------------------------------------------------------------
 transaction status: 0x0
 description: transaction executed successfully

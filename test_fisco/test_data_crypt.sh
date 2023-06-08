@@ -17,7 +17,7 @@ EOF
     # configtxlator proto_decode --input $BLOCK_ADDRESS/mychannel_$1.block --type common.Block --output $BLOCK_ADDRESS/trace.json
     # local value=`cat $BLOCK_ADDRESS/block_$1.txt`
     local value=`cat $BLOCK_ADDRESS/block_$1.txt | sed -n "/input=/ p" | awk '{print $NF}'`
-    echo $value
+    println $value
     # echo ${#value}
 }
 

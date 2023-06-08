@@ -24,7 +24,7 @@ function test_raft() {
 
     start_docker $test_node
 
-    println "sleep 10"
+    println "sleep 10~"
     sleep 10
     $test_node_data_consistency_cmd
 
