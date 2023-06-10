@@ -23,6 +23,7 @@ function test_node_data_consistency() {
             > $NODE_RESULT_ADDRESS/valid_log${j}.txt
 
         sort -u $NODE_RESULT_ADDRESS/valid_log${j}.txt > $NODE_RESULT_ADDRESS/temp${j}.txt
+        
             # | awk '{for(i=9; i<=14; i++) {print $i}}' ORS="\n"
         # cat $NODE_RESULT_ADDRESS/temp${j}.txt
         let j++
@@ -57,7 +58,7 @@ function test_node_data_consistency() {
     fi
     rm $NODE_RESULT_ADDRESS/common.txt
     rm $NODE_RESULT_ADDRESS/temp*.txt
-    rm $NODE_RESULT_ADDRESS/valid_log*.log
+    rm $NODE_RESULT_ADDRESS/valid_log*.txt
 }
 
 # for range get log
